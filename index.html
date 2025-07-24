@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <title>Console</title>
+</head>
+
+<body>
+    <main class="bg-zinc-100 h-screen p-16">
+        <div class="max-w-[600px] h-96 mx-auto bg-white p-16 rounded-3xl">
+            <div class="space-y-2 max-w-[340px] mx-auto">
+                <h1 class="text-center font-medium uppercase mb-6">SKUCode</h1>
+                <div id="options-value" class="relative cursor-pointer">
+                    <div id="options-title" class="flex items-center pl-4 h-12 bg-zinc-100">Pick item</div>
+                    <div id="options-list" class="max-h-0 overflow-hidden w-full absolute z-10 transition-all duration-150 ease-in-out">
+                        <div data-value="top" class="flex items-center pl-4 h-12 bg-zinc-100 w-full cursor-pointer hover:bg-zinc-50">Top</div>
+                        <div data-value="knitwear" class="flex items-center pl-4 h-12 bg-zinc-100 w-full cursor-pointer hover:bg-zinc-50">Knitwear</div>
+                        <div data-value="bottom" class="flex items-center pl-4 h-12 bg-zinc-100 w-full cursor-pointer hover:bg-zinc-50">Bottom</div>
+                    </div>
+                </div>
+                <div class="relative flex-1 bg-zinc-50">
+                    <div id="output" class="flex items-center pl-6 h-14 text-sm tracking-widest">&nbsp;</div>
+                    <div id="button" class="flex items-center justify-center absolute top-1/2 right-4 -translate-y-1/2 text-lg cursor-pointer"><i class="ph ph-arrow-clockwise"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/index.js"></script>
+
+</html>
